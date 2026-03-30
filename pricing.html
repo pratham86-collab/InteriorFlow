@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - InteriorFlow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo"><a href="/"><img src="images/logo.png" alt="" style="width: 140px;"></a></div>
+
+            <!-- Navigation -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#">Home</a>
+                <a href="/#features">Features</a>
+                <a href="/#how-it-works">How It Works</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="nav-actions">
+                <a href="login.html" class="login">Login</a>
+                <a href="#" class="cta demo">Get Started</a>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+    <section class="pricing">
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that fits your design business.</p>
+            </div>
+
+            <div class="pricing-grid">
+
+                <!-- Starter -->
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <p class="desc">Perfect for freelancers starting out</p>
+
+                    <h2 class="price">₹999<span>/mo</span></h2>
+
+                    <ul>
+                        <li>✔ Client booking system</li>
+                        <li>✔ Basic project boards</li>
+                        <li>✔ Limited storage</li>
+                        <li>✔ Email support</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn secondary">Get Started</a>
+                </div>
+
+                <!-- Pro (Highlight) -->
+                <div class="pricing-card highlight">
+                    <div class="tag">Most Popular</div>
+
+                    <h3>Pro</h3>
+                    <p class="desc">Advanced tools for growing studios</p>
+
+                    <h2 class="price">₹1999<span>/mo</span></h2>
+
+                    <ul>
+                        <li>✔ Everything in Starter</li>
+                        <li>✔ Advanced moodboards</li>
+                        <li>✔ Client collaboration</li>
+                        <li>✔ Priority support</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn primary">Get Started</a>
+                </div>
+
+                <!-- Studio -->
+                <div class="pricing-card">
+                    <h3>Studio</h3>
+                    <p class="desc">Complete solution for teams</p>
+
+                    <h2 class="price">₹3999<span>/mo</span></h2>
+
+                    <ul>
+                        <li>✔ Everything in Pro</li>
+                        <li>✔ Team collaboration</li>
+                        <li>✔ Unlimited storage</li>
+                        <li>✔ Dedicated support</li>
+                    </ul>
+
+                    <a href="contact.html" class="btn secondary">Get Started</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-col brand">
+                <h2>InteriorFlow</h2>
+                <p>
+                    Client booking, project management, and visualization — all in one place.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="/">Home</a>
+                <a href="/#features">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <!-- Resources -->
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <a href="contact.html">Help Center</a>
+                <a href="/#how-it-works">How It Works</a>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>hello@interiorflow.com</p>
+                <p>Ireland</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <p>© 2026 InteriorFlow. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="demo-popup" id="demoPopup">
+
+        <div class="demo-box">
+
+            <!-- Left Image -->
+            <div class="demo-image">
+                <img src="images/interior.jpg" alt="demo">
+            </div>
+
+            <!-- Right Form -->
+            <div class="demo-content">
+
+                <span class="close-btn">&times;</span>
+
+                <h2>Request a Demo</h2>
+                <form id="demoForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" maxlength="10" id="phone" placeholder="Phone Number" required>
+                    <button type="submit">🚀 Submit Request</button>
+                    <div class="success-msg">
+                        ✅ Your request has been submitted successfully.
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("phone").addEventListener("input", function () {
+            this.value = this.value.replace(/[^0-9]/g, "");
+        });
+    </script>
+</body>
+
+</html>

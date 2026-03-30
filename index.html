@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InteriorFlow – Booking + Visualization Portal for Designers </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav-container">
+
+            <!-- Logo -->
+            <div class="logo"><a href="/"><img src="images/logo.png" alt="" style="width: 140px;"></a></div>
+
+            <!-- Navigation -->
+            <nav class="nav-menu" id="navMenu">
+                <a href="#">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="nav-actions">
+                <a href="login.html" class="login">Login</a>
+                <a href="#" class="cta demo">Get Started</a>
+            </div>
+
+            <!-- Hamburger -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+
+            <h1>
+                Design Projects.<br>
+                <span>Simplified.</span>
+            </h1>
+
+            <p class="subtext">
+                Manage client bookings, track projects, and share stunning moodboards —
+                all in one place.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="login.html" class="btn primary">Start Free Trial</a>
+                <a href="#" class="btn secondary demo">Book a Demo</a>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <h3>500+</h3>
+                    <p>Designers</p>
+                </div>
+                <div>
+                    <h3>10k+</h3>
+                    <p>Projects Managed</p>
+                </div>
+                <div>
+                    <h3>4.9★</h3>
+                    <p>Client Rating</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Side Visual -->
+        <div class="hero-image">
+            <img src="images/Dashboard.png" alt="Dashboard Preview">
+        </div>
+    </section>
+    <!-- <section class="social-proof">
+        <div class="container">
+
+            <p class="trusted-text">
+                Trusted by <span>500+ Interior Designers</span> Worldwide
+            </p>
+
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p class="review">
+                    “InteriorFlow transformed how I manage clients and projects.”
+                </p>
+
+                <div class="review-user">
+                    <img src="https://i.pravatar.cc/60?img=3" alt="User">
+                    <div>
+                        <h4>Jack Mitchell</h4>
+                        <span>Interior Designer</span>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="brand-logos">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" alt="Slack">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg" alt="Apple" style="filter: invert(1);">
+            </div>
+
+        </div>
+    </section> -->
+
+    <section class="features" id="features">
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Everything You Need to Run Your Design Business</h2>
+                <p>From first client inquiry to final payment — all in one powerful platform.</p>
+            </div>
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+                    <div class="icon">📅</div>
+                    <h3>Smart Client Booking</h3>
+                    <p>
+                        Easily capture inquiries and schedule consultations with a built-in booking calendar.
+                        No more back-and-forth emails.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">🎨</div>
+                    <h3>Project Management Made Visual</h3>
+                    <p>
+                        Create beautiful project boards with moodboards, renders, and files — all organized in one
+                        place.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">💬</div>
+                    <h3>Seamless Collaboration</h3>
+                    <p>
+                        Communicate with clients directly inside projects. Share updates, get approvals, and keep
+                        everything documented.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">👀</div>
+                    <h3>Client-Friendly Experience</h3>
+                    <p>
+                        Give clients a clean, simple interface to view designs, track progress, and leave feedback.
+                    </p>
+                </div>
+
+                <div class="feature-card highlight">
+                    <div class="icon">💳</div>
+                    <h3>Integrated Payments</h3>
+                    <p>
+                        Send invoices and get paid faster with seamless Stripe integration.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="showcase" id="showcase">
+        <h2>See InteriorFlow in Action</h2>
+
+        <div class="swiper showcaseSlider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="images/Dashboard.png" />
+                    <h3>Designer Dashboard</h3>
+                    <p>Track leads, manage active projects, and view your schedule.</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/Project_Moodboard.png" />
+                    <h3>Project Moodboard</h3>
+                    <p>Create stunning visual boards with materials and notes.</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/Client-view.png" />
+                    <h3>Client View</h3>
+                    <p>Show before/after transformations with comments.</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/Bookincalender.png" />
+                    <h3>Booking Calendar</h3>
+                    <p>Manage consultations with a clean monthly view.</p>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/Collabration.png" />
+                    <h3>Collaboration Panel</h3>
+                    <p>Real-time comments and approvals.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>From inquiry to payment — streamline your entire workflow.</p>
+            </div>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="circle">1</div>
+                    <h3>Capture Leads</h3>
+                    <p>Clients submit inquiries through your custom form.</p>
+                </div>
+
+                <div class="step">
+                    <div class="circle">2</div>
+                    <h3>Book & Plan</h3>
+                    <p>Schedule consultations and create project boards.</p>
+                </div>
+
+                <div class="step">
+                    <div class="circle">3</div>
+                    <h3>Design & Collaborate</h3>
+                    <p>Share ideas, collect feedback, and finalize designs.</p>
+                </div>
+
+                <div class="step">
+                    <div class="circle">4</div>
+                    <h3>Deliver & Get Paid</h3>
+                    <p>Send invoices and complete projects smoothly.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="benefits">
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Why Designers Love InteriorFlow</h2>
+                <p>Everything you need to work smarter, impress clients, and grow faster.</p>
+            </div>
+
+            <div class="benefit-grid">
+
+                <div class="benefit-card">
+                    <div class="icon">⏳</div>
+                    <h3>Save Hours on Admin Work</h3>
+                    <p>Automate bookings, updates, and communication — so you can focus on design.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="icon">✨</div>
+                    <h3>Impress Clients</h3>
+                    <p>Deliver a seamless, professional experience that builds trust and loyalty.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="icon">📦</div>
+                    <h3>All-in-One Platform</h3>
+                    <p>Keep bookings, projects, files, and communication in one place.</p>
+                </div>
+
+                <div class="benefit-card highlight">
+                    <div class="icon">🚀</div>
+                    <h3>Scale Your Business</h3>
+                    <p>Take on more clients and projects without increasing your workload.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Brand -->
+            <div class="footer-col brand">
+                <h2>InteriorFlow</h2>
+                <p>
+                    Client booking, project management, and visualization — all in one place.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="/">Home</a>
+                <a href="#features">Features</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <!-- Resources -->
+            <div class="footer-col">
+                <h3>Resources</h3>
+                <a href="contact.html">Help Center</a>
+                <a href="#how-it-works">How It Works</a>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>hello@interiorflow.com</p>
+                <p>Ireland</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom -->
+        <div class="footer-bottom">
+            <p>© 2026 InteriorFlow. All rights reserved.</p>
+        </div>
+    </footer>
+    <div class="demo-popup" id="demoPopup">
+
+        <div class="demo-box">
+
+            <!-- Left Image -->
+            <div class="demo-image">
+                <img src="images/interior.jpg" alt="demo">
+            </div>
+
+            <!-- Right Form -->
+            <div class="demo-content">
+
+                <span class="close-btn">&times;</span>
+
+                <h2>Request a Demo</h2>
+                <form id="demoForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" maxlength="10" id="phone" placeholder="Phone Number" required>
+                    <button type="submit">🚀 Submit Request</button>
+                    <div class="success-msg">
+                        ✅ Your request has been submitted successfully.
+                    </div>
+                </form>
+
+                <!-- Success Message -->
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("phone").addEventListener("input", function () {
+            this.value = this.value.replace(/[^0-9]/g, "");
+        });
+    </script>
+</body>
+
+</html>
